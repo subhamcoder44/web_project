@@ -32,7 +32,7 @@ async function verivication( email,otp){
     throw error;
     }
     
-}
+};
     OTPSchema.pre('save', async function(next){
         
             await verivication(this.email,this.otp);
